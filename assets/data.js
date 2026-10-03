@@ -12,3 +12,10 @@ window.DEMO_LINKS = (() => {
   categoryJobs:category=>search('job',{d0:data.mainSite.categoryCodes[category]||'160206'})
  };
 })();
+
+// 五大主題共用同一份分類，原八項保留為下層職務方向。
+window.DEMO_DATA.topicGroups=window.DEMO_DATA.homeJobGroups;
+window.DEMO_TOPICS={
+ forCategory:category=>window.DEMO_DATA.topicGroups.find(g=>g.categories.includes(category)),
+ get:id=>window.DEMO_DATA.topicGroups.find(g=>g.id===id)
+};

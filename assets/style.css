@@ -44,3 +44,10 @@ body{background:#f5f7fa}.header{background:#fff}.headinner{min-height:82px}.nav{
 .searchrow.story-search{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:9px;align-items:stretch}
 .searchrow.story-search input{width:100%;min-width:0}
 .searchrow.story-search .btn{white-space:nowrap}
+
+/* 全站共用五大主題；找工作頁的最高層分類。 */
+.topic-nav{display:flex;gap:8px;overflow-x:auto;padding:3px 3px 12px;margin:0 0 18px;scrollbar-width:thin}
+.topic-nav a{flex:1 0 auto;text-align:center;white-space:nowrap;padding:12px 18px;border:1px solid var(--line);border-radius:7px;background:#fff;font-size:15px;font-weight:700}
+.topic-nav a[aria-selected="true"],.topic-nav a[aria-current="page"]{background:var(--navy);color:#fff;border-color:var(--navy)}
+.topic-summary{margin-bottom:18px}.topic-summary h2{font-size:25px}.topic-summary p{margin-top:5px}
+@media(max-width:700px){.topic-nav a{flex:0 0 auto;padding:10px 15px}.topic-summary h2{font-size:22px}}
