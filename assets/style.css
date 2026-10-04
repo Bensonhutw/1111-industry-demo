@@ -70,3 +70,6 @@ body{background:#f5f7fa}.header{background:#fff}.headinner{min-height:82px}.nav{
 @media(max-width:700px){.company-search{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.industry-salary-average{padding:13px}.industry-salary-average .fine{flex-basis:100%}.full-salary-search{grid-template-columns:minmax(0,1fr) auto}.full-salary-search select{grid-column:1/-1}.salary-login-panel{padding:20px}}
 
 .source-market-average{display:flex;align-items:center;gap:8px}.source-market-average>span{font-size:12px;color:var(--muted)}.industry-salary-average .average-source{flex-basis:100%}
+
+.story-tabs{display:flex;gap:9px;margin-bottom:18px;overflow-x:auto;padding:3px 3px 7px}.story-tabs a{flex:1 0 auto;text-align:center;padding:11px 18px;border:1px solid var(--line);border-radius:7px;background:#fff;font-weight:700;font-size:15px;white-space:nowrap}.story-tabs a[aria-selected="true"]{background:var(--navy);color:#fff;border-color:var(--navy)}.story-tabs span{font-size:12px;opacity:.65;margin-left:9px}
+@media(max-width:700px){.story-tabs{gap:7px}.story-tabs a{padding:10px 12px;font-size:14px}.story-tabs span{margin-left:6px}}
